@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moodMate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <div class="logo">🌟 moodMate</div>
+            <div id="historyList"></div>
+        </nav>
+
+        <main class="main-content">
+            <section class="hero">
+                <h1>How are you, really?</h1>
+                <div class="input-box">
+                    <textarea id="userText" placeholder="Write about your day or record your voice..."></textarea>
+                    <div class="actions">
+                        <button id="micBtn" class="btn-icon"><i class="fas fa-microphone"></i></button>
+                        <button id="analyzeBtn" class="btn-primary">Analyze Vibe</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="resultArea" class="result-container hidden">
+                <div class="mood-card">
+                    <h2 id="moodTitle"></h2>
+                    <p id="moodQuote"></p>
+                    <div id="trackSwitcher" class="switcher"></div>
+                    <iframe id="spotifyPlayer" src="" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
